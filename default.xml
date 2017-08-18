@@ -16,6 +16,12 @@
            remote="aosp"
            sync-j="4" />
 
+  <!-- projects CID-specific -->
+  <project path="external/dhcpd" name="cid/android_external_dhcpd" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
+  <project path="external/stlport" name="cid/android_external_stlport" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
+  <project path="hardware/sierra" name="cid/android_hardware_sierra" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
+  <project path="hardware/u-blox/gps" name="cid/android_hardware_ublox_gps" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
+
   <!-- Boundary Devices kernel and U-Boot -->
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="boundary-v2017.03" remote="boundary-github" />
   <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-n7.1.1_1.0.0-ga" remote="boundary-github" />
