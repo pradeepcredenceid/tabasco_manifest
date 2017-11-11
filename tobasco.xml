@@ -4,106 +4,100 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="boundary-github"
-           fetch="git://github.com/boundarydevices/" />
-  <remote  name="boundary-linode"
-	   fetch="ssh://git@linode.boundarydevices.com/" />
-  <remote  name="freescale"
-	   fetch="git://git.freescale.com/" />
-  <remote  name="github"
-           fetch="git://github.com/" />
-  <default revision="refs/tags/android-7.1.1_r13"
+  <remote  name="credenceid"
+           fetch="git://github.com/credenceid/" />
+  <default revision="refs/tags/tobasco-7.1.1_r13"
            remote="aosp"
            sync-j="4" />
 
   <!-- projects CID-specific -->
-  <project path="external/dhcpd" name="cid/android_external_dhcpd" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
-  <project path="external/stlport" name="cid/android_external_stlport" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
-  <project path="frameworks/opt/telephony" name="cid/android_frameworks_opt_telephony" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/ril" name="cid/android_hardware_ril" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/sierra" name="cid/android_hardware_sierra" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/u-blox/gps" name="cid/android_hardware_ublox_gps" remote="boundary-linode" revision="cid-imx-n7.1.1_1.0.0-ga" />
+  <project path="external/dhcpd" name="tobasco_external_dhcpd" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/stlport" name="tobasco_external_stlport" remote="credenceid" revision="cid_tobasco" />
+  <project path="frameworks/opt/telephony" name="tobasco_frameworks_opt_telephony" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/ril" name="tobasco_hardware_ril" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/sierra" name="tobasco_hardware_sierra" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/u-blox/gps" name="tobasco_hardware_ublox_gps" remote="credenceid" revision="cid_tobasco" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="boundary-v2017.07" remote="boundary-github" />
-  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-n7.1.1_1.0.0-ga" remote="boundary-github" />
+  <project path="bootable/bootloader/uboot-imx" name="tobasco_bootable_bootloader_uboot-imx" revision="cid_tobasco" remote="credenceid" />
+  <project path="kernel_imx" name="tobasco_kernel_imx" revision="cid_tobasco" remote="credenceid" />
 
   <!-- Boundary Devices machine layer -->
-  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
+  <project path="device/boundary" name="tobasco_device_boundary" remote="credenceid" revision="cid_tobasco" />
 
   <!-- Boundary Devices updates to other components -->
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="build" name="android_build" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" >
+  <project path="bootable/recovery" name="tobasco_bootable_recovery" remote="credenceid" revision="cid_tobasco" />
+  <project path="build" name="tobasco_build" remote="credenceid" revision="cid_tobasco" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/invensense" name="android_hardware_invensense" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="system/bt" name="android_system_bt" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" groups="pdk" />
-  <project path="system/netd" name="android_system_netd" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="system/vold" name="android_system_vold" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
+  <project path="device/fsl" name="tobasco_device_fsl" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/wpa_supplicant_8" name="tobasco_external_wpa_supplicant_8" remote="credenceid" revision="cid_tobasco" />
+  <project path="frameworks/av" name="tobasco_frameworks_av" remote="credenceid" revision="cid_tobasco" />
+  <project path="frameworks/base" name="tobasco_frameworks_base" remote="credenceid" revision="cid_tobasco" />
+  <project path="frameworks/native" name="tobasco_frameworks_native" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/broadcom/wlan" name="tobasco_hardware_broadcom_wlan" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/imx" name="tobasco_hardware_imx" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/invensense" name="tobasco_hardware_invensense" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/libhardware" name="tobasco_hardware_libhardware" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/libhardware_legacy" name="tobasco_hardware_libhardware_legacy" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/qcom/bt" name="tobasco_hardware_qcom_bt" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Camera2" name="tobasco_packages_apps_Camera2" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/fsl_imx_demo" name="tobasco_packages_apps_fsl_imx_demo" remote="credenceid" revision="cid_tobasco" />
+  <project path="system/bt" name="tobasco_system_bt" remote="credenceid" revision="cid_tobasco" />
+  <project path="system/core" name="tobasco_system_core" remote="credenceid" revision="cid_tobasco" />
+  <project path="system/extras" name="tobasco_system_extras" remote="credenceid" revision="cid_tobasco" groups="pdk" />
+  <project path="system/netd" name="tobasco_system_netd" remote="credenceid" revision="cid_tobasco" />
+  <project path="system/sepolicy" name="tobasco_system_sepolicy" remote="credenceid" revision="cid_tobasco" />
+  <project path="system/vold" name="tobasco_system_vold" remote="credenceid" revision="cid_tobasco" />
 
   <!-- projects added by Boundary -->
-  <project path="external/can-utils" name="linux-can/can-utils.git" remote="github" revision="master" />
-  <project path="external/devregs" name="devregs" remote="boundary-github" revision="master" />
-  <project path="external/e2fsprogs" name="lineageos/android_external_e2fsprogs" remote="github" revision="cm-14.1" />
-  <project path="external/exfat" name="lineageos/android_external_exfat" remote="github" revision="cm-14.1" />
-  <project path="external/fuse" name="lineageos/android_external_fuse" remote="github" revision="cm-14.1" />
-  <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
-  <project path="external/libtruezip" name="lineageos/android_external_libtruezip" remote="github" revision="cm-14.1" />
-  <project path="external/ntfs-3g" name="lineageos/android_external_ntfs-3g" remote="github" revision="cm-14.1" />
-  <project path="external/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-LNX.LEH.4.2.2.2" />
-  <project path="external/qca-firmware" name="qca-firmware" remote="boundary-linode" revision="master" />
-  <project path="external/uicommon" name="lineageos/android_external_cyanogen_uicommon" remote="github" revision="cm-14.1" />
-  <project path="hardware/ti/wlan" name="lineageos/android_hardware_ti_wlan"  remote="github" revision="cm-14.1" />
-  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/BoundaryDemo" name="OkienkaTest" remote="boundary-github" revision="master" />
-  <project path="packages/apps/CMFileManager" name="lineageos/android_packages_apps_CMFileManager" remote="github" revision="cm-14.1" />
+  <project path="external/can-utils" name="tobasco_external_can-utils" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/devregs" name="tobasco_external_devregs" remote="credenceid" revision="master" />
+  <project path="external/e2fsprogs" name="tobasco_external_e2fsprogs" remote="credenceid0" revision="cid_tobasco" />
+  <project path="external/exfat" name="tobasco_external_exfat" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/fuse" name="tobasco_external_fuse" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/i2c-tools" name="tobasco_external_i2c-tools" remote="credenceid" revision="tobasco" />
+  <project path="external/libtruezip" name="tobasco_external_libtruezip" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/ntfs-3g" name="tobasco_external_ntfs-3g" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/qcacld-2.0" name="tobasco_external_qcacld-2.0" remote="credenceid" revision="boundary-LNX.LEH.4.2.2.2" />
+  <project path="external/qca-firmware" name="tobasco_external_qca-firmware" remote="credenceid" revision="master" />
+  <project path="external/uicommon" name="tobasco_external_cyanogen_uicommon" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/ti/wlan" name="tobasco_hardware_ti_wlan"  remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/ti/wpan" name="tobasco_hardware_ti_wpan" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/BoundaryDemo" name="tobasco_packages_apps_BoundaryDemo" remote="credenceid" revision="master" />
+  <project path="packages/apps/CMFileManager" name="tobasco_packages_apps_CMFileManager" remote="credenceid" revision="cid_tobasco" />
 
   <!-- projects added by Freescale -->
-  <project path="device/fsl-codec" name="device/fsl-codec" remote="boundary-linode" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="device/wfd-proprietary" name="wfd-proprietary" remote="boundary-linode" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="external/fsl_aacp_dec" name="external/fsl_aacp_dec" remote="boundary-linode" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="external/fsl_imx_omx" name="external/fsl_imx_omx" remote="boundary-linode" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="external/linux-firmware-imx" name="external/linux-firmware-imx" remote="boundary-linode" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="external/linux-lib" name="android_external_linux-lib" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="external/mtd-utils" name="android_external_mtd-utils" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
+  <project path="device/fsl-codec" name="tobasco_device_fsl-codec" remote="credenceid" revision="cid_tobasco" />
+  <project path="device/fsl-proprietary" name="tobasco_device_fsl-proprietary" remote="credenceid" revision="cid_tobasco" />
+  <project path="device/wfd-proprietary" name="tobasco_device_wfd-proprietary" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/fsl_aacp_dec" name="tobasco_external_fsl_aacp_dec" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/fsl_imx_omx" name="tobasco_external_fsl_imx_omx" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/linux-firmware-imx" name="tobasco_external_linux-firmware-imx" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/linux-lib" name="tobasco_external_linux-lib" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/mtd-utils" name="tobasco_external_mtd-utils" remote="credenceid" revision="cid_tobasco" />
 
   <!-- projects changed by Freescale -->
-  <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="external/dnsmasq" name="android_external_dnsmasq" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="external/skia" name="skia" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="frameworks/ex" name="android_frameworks_ex" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="frameworks/opt/net/ethernet" name="android_frameworks_opt_net_ethernet" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="frameworks/support" name="android_frameworks_support" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="libcore" name="android_libcore" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Browser2" name="android_packages_apps_Browser2" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Email" name="android_packages_apps_Email" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Gallery" name="android_packages_apps_Gallery" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Gallery2" name="android_app_Gallery2" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Launcher2" name="android_packages_apps_Launcher2" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/LegacyCamera" name="LegacyCamera" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Music" name="android_packages_apps_music" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/SoundRecorder" name="android_packages_apps_soundrecorder" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="system/media" name="android_system_media" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
+  <project path="bionic" name="tobasco_bionic" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/dnsmasq" name="tobasco_external_dnsmasq" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/skia" name="tobasco_external_skia" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/tinyalsa" name="tobasco_external_tinyalsa" remote="credenceid" revision="cid_tobasco" />
+  <project path="frameworks/ex" name="tobasco_frameworks_ex" remote="credenceid" revision="cid_tobasco" />
+  <project path="frameworks/opt/net/ethernet" name="tobasco_frameworks_opt_net_ethernet" remote="credenceid" revision="cid_tobasco" />
+  <project path="frameworks/support" name="tobasco_frameworks_support" remote="credenceid" revision="cid_tobasco" />
+  <project path="libcore" name="tobasco_libcore" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Browser2" name="tobasco_packages_apps_Browser2" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Contacts" name="tobasco_packages_apps_Contacts" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/DeskClock" name="tobasco_packages_apps_DeskClock" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Email" name="tobasco_packages_apps_Email" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Gallery" name="tobasco_packages_apps_Gallery" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Gallery2" name="tobasco_app_Gallery2" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Launcher2" name="tobasco_packages_apps_Launcher2" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/LegacyCamera" name="tobasco_packages_apps_LegacyCamera" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Music" name="tobasco_packages_apps_music" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Settings" name="tobasco_packages_apps_settings" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/SoundRecorder" name="tobasco_packages_apps_soundrecorder" remote="credenceid" revision="cid_tobasco" />
+  <project path="system/media" name="tobasco_system_media" remote="credenceid" revision="cid_tobasco" />
 
   <!-- Unchanged AOSP projects -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
