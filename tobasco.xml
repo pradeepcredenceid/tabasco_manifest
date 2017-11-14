@@ -53,7 +53,7 @@
   <!-- projects added by Boundary -->
   <project path="external/can-utils" name="tobasco_external_can-utils" remote="credenceid" revision="cid_tobasco" />
   <project path="external/devregs" name="tobasco_external_devregs" remote="credenceid" revision="master" />
-  <project path="external/e2fsprogs" name="tobasco_external_e2fsprogs" remote="credenceid0" revision="cid_tobasco" />
+  <project path="external/e2fsprogs" name="tobasco_external_e2fsprogs" remote="credenceid" revision="cid_tobasco" />
   <project path="external/exfat" name="tobasco_external_exfat" remote="credenceid" revision="cid_tobasco" />
   <project path="external/fuse" name="tobasco_external_fuse" remote="credenceid" revision="cid_tobasco" />
   <project path="external/i2c-tools" name="tobasco_external_i2c-tools" remote="credenceid" revision="tobasco" />
