@@ -6,6 +6,8 @@
            review="https://android-review.googlesource.com/" />
   <remote  name="credenceid"
            fetch="git://github.com/pradeepcredenceid/" />
+  <remote  name="credenceframe"
+	   fetch="git://github.com/CredenceID/" />
   <default revision="refs/tags/android-7.1.1_r13"
            remote="aosp"
            sync-j="4" />
@@ -16,7 +18,7 @@
   <project path="frameworks/opt/telephony" name="tobasco_frameworks_opt_telephony" remote="credenceid" revision="cid_tobasco" />
   <project path="hardware/ril" name="tobasco_hardware_ril" remote="credenceid" revision="cid_tobasco" />
   <project path="hardware/sierra" name="tobasco_hardware_sierra" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/u-blox/gps" name="tobasco_hardware_ublox_gps" remote="credenceid" revision="cid_tobasco" />
+  <project path="hardware/u-blox/gps" name="tobasco_hardware_u-blox_gps" remote="credenceid" revision="cid_tobasco" />
 
   <!-- Boundary Devices kernel and U-Boot -->
   <project path="bootable/bootloader/uboot-imx" name="tobasco_bootable_bootloader_uboot-imx" revision="cid_tobasco" remote="credenceid" />
@@ -33,7 +35,7 @@
   <project path="device/fsl" name="tobasco_device_fsl" remote="credenceid" revision="cid_tobasco" />
   <project path="external/wpa_supplicant_8" name="tobasco_external_wpa_supplicant_8" remote="credenceid" revision="cid_tobasco" />
   <project path="frameworks/av" name="tobasco_frameworks_av" remote="credenceid" revision="cid_tobasco" />
-  <project path="frameworks/base" name="tobasco_frameworks_base" remote="credenceid" revision="cid_tobasco" />
+  <project path="frameworks/base" name="tobasco_frameworks_base" remote="credenceframe" revision="master" />
   <project path="frameworks/native" name="tobasco_frameworks_native" remote="credenceid" revision="cid_tobasco" />
   <project path="hardware/broadcom/wlan" name="tobasco_hardware_broadcom_wlan" remote="credenceid" revision="cid_tobasco" />
   <project path="hardware/imx" name="tobasco_hardware_imx" remote="credenceid" revision="cid_tobasco" />
@@ -52,19 +54,19 @@
 
   <!-- projects added by Boundary -->
   <project path="external/can-utils" name="tobasco_external_can-utils" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/devregs" name="tobasco_external_devregs" remote="credenceid" revision="master" />
+  <project path="external/devregs" name="tobasco_external_devregs" remote="credenceid" revision="cid_tobasco" />
   <project path="external/e2fsprogs" name="tobasco_external_e2fsprogs" remote="credenceid" revision="cid_tobasco" />
   <project path="external/exfat" name="tobasco_external_exfat" remote="credenceid" revision="cid_tobasco" />
   <project path="external/fuse" name="tobasco_external_fuse" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/i2c-tools" name="tobasco_external_i2c-tools" remote="credenceid" revision="tobasco" />
+  <project path="external/i2c-tools" name="tabasco_external_i2c-tools" remote="credenceid" revision="cid_tobasco" />
   <project path="external/libtruezip" name="tobasco_external_libtruezip" remote="credenceid" revision="cid_tobasco" />
   <project path="external/ntfs-3g" name="tobasco_external_ntfs-3g" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/qcacld-2.0" name="tobasco_external_qcacld-2.0" remote="credenceid" revision="boundary-LNX.LEH.4.2.2.2" />
-  <project path="external/qca-firmware" name="tobasco_external_qca-firmware" remote="credenceid" revision="master" />
-  <project path="external/uicommon" name="tobasco_external_cyanogen_uicommon" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/qcacld-2.0" name="tobasco_external_qcacld-2.0" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/qca-firmware" name="tobasco_external_qca-firmware" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/uicommon" name="tabasco_external_uicommon" remote="credenceid" revision="cid_tobasco" />
   <project path="hardware/ti/wlan" name="tobasco_hardware_ti_wlan"  remote="credenceid" revision="cid_tobasco" />
   <project path="hardware/ti/wpan" name="tobasco_hardware_ti_wpan" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/BoundaryDemo" name="tobasco_packages_apps_BoundaryDemo" remote="credenceid" revision="master" />
+  <project path="packages/apps/BoundaryDemo" name="tobasco_packages_apps_BoundaryDemo" remote="credenceid" revision="cid_tobasco" />
   <project path="packages/apps/CMFileManager" name="tobasco_packages_apps_CMFileManager" remote="credenceid" revision="cid_tobasco" />
 
   <!-- projects added by Freescale -->
@@ -91,7 +93,7 @@
   <project path="packages/apps/DeskClock" name="tobasco_packages_apps_DeskClock" remote="credenceid" revision="cid_tobasco" />
   <project path="packages/apps/Email" name="tobasco_packages_apps_Email" remote="credenceid" revision="cid_tobasco" />
   <project path="packages/apps/Gallery" name="tobasco_packages_apps_Gallery" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Gallery2" name="tobasco_app_Gallery2" remote="credenceid" revision="cid_tobasco" />
+  <project path="packages/apps/Gallery2" name="tabasco_packages_apps_Gallery2" remote="credenceid" revision="cid_tobasco" />
   <project path="packages/apps/Launcher2" name="tobasco_packages_apps_Launcher2" remote="credenceid" revision="cid_tobasco" />
   <project path="packages/apps/LegacyCamera" name="tobasco_packages_apps_LegacyCamera" remote="credenceid" revision="cid_tobasco" />
   <project path="packages/apps/Music" name="tobasco_packages_apps_music" remote="credenceid" revision="cid_tobasco" />
