@@ -13,93 +13,93 @@
            sync-j="4" />
 
   <!-- projects CID-specific -->
-  <project path="external/dhcpd" name="tobasco_external_dhcpd" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/stlport" name="tobasco_external_stlport" remote="credenceid" revision="cid_tobasco" />
-  <project path="frameworks/opt/telephony" name="tobasco_frameworks_opt_telephony" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/ril" name="tobasco_hardware_ril" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/sierra" name="tobasco_hardware_sierra" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/u-blox/gps" name="tobasco_hardware_u-blox_gps" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/dhcpd" name="tabasco_external_dhcpd" remote="credenceid" revision="master" />
+  <project path="external/stlport" name="tabasco_external_stlport" remote="credenceid" revision="master" />
+  <project path="frameworks/opt/telephony" name="tabasco_frameworks_opt_telephony" remote="credenceid" revision="master" />
+  <project path="hardware/ril" name="tabasco_hardware_ril" remote="credenceid" revision="master" />
+  <project path="hardware/sierra" name="tabasco_hardware_sierra" remote="credenceid" revision="master" />
+  <project path="hardware/u-blox/gps" name="tabasco_hardware_u-blox_gps" remote="credenceid" revision="master" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="bootable/bootloader/uboot-imx" name="tobasco_bootable_bootloader_uboot-imx" revision="cid_tobasco" remote="credenceid" />
-  <project path="kernel_imx" name="tobasco_kernel_imx" revision="cid_tobasco" remote="credenceid" />
+  <project path="bootable/bootloader/uboot-imx" name="tabasco_bootable_bootloader_uboot-imx" revision="master" remote="credenceid" />
+  <project path="kernel_imx" name="tabasco_kernel_imx" revision="master" remote="credenceid" />
 
   <!-- Boundary Devices machine layer -->
-  <project path="device/boundary" name="tobasco_device_boundary" remote="credenceid" revision="cid_tobasco" />
+  <project path="device/boundary" name="tabasco_device_boundary" remote="credenceid" revision="master" />
 
   <!-- Boundary Devices updates to other components -->
-  <project path="bootable/recovery" name="tobasco_bootable_recovery" remote="credenceid" revision="cid_tobasco" />
-  <project path="build" name="tobasco_build" remote="credenceid" revision="cid_tobasco" >
+  <project path="bootable/recovery" name="tabasco_bootable_recovery" remote="credenceid" revision="master" />
+  <project path="build" name="tabasco_build" remote="credenceid" revision="master" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="device/fsl" name="tobasco_device_fsl" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/wpa_supplicant_8" name="tobasco_external_wpa_supplicant_8" remote="credenceid" revision="cid_tobasco" />
-  <project path="frameworks/av" name="tobasco_frameworks_av" remote="credenceid" revision="cid_tobasco" />
-  <project path="frameworks/base" name="tobasco_frameworks_base" remote="credenceframe" revision="master" />
-  <project path="frameworks/native" name="tobasco_frameworks_native" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/broadcom/wlan" name="tobasco_hardware_broadcom_wlan" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/imx" name="tobasco_hardware_imx" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/invensense" name="tobasco_hardware_invensense" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/libhardware" name="tobasco_hardware_libhardware" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/libhardware_legacy" name="tobasco_hardware_libhardware_legacy" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/qcom/bt" name="tobasco_hardware_qcom_bt" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Camera2" name="tobasco_packages_apps_Camera2" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/fsl_imx_demo" name="tobasco_packages_apps_fsl_imx_demo" remote="credenceid" revision="cid_tobasco" />
-  <project path="system/bt" name="tobasco_system_bt" remote="credenceid" revision="cid_tobasco" />
-  <project path="system/core" name="tobasco_system_core" remote="credenceid" revision="cid_tobasco" />
-  <project path="system/extras" name="tobasco_system_extras" remote="credenceid" revision="cid_tobasco" groups="pdk" />
-  <project path="system/netd" name="tobasco_system_netd" remote="credenceid" revision="cid_tobasco" />
-  <project path="system/sepolicy" name="tobasco_system_sepolicy" remote="credenceid" revision="cid_tobasco" />
-  <project path="system/vold" name="tobasco_system_vold" remote="credenceid" revision="cid_tobasco" />
+  <project path="device/fsl" name="tabasco_device_fsl" remote="credenceid" revision="master" />
+  <project path="external/wpa_supplicant_8" name="tabasco_external_wpa_supplicant_8" remote="credenceid" revision="master" />
+  <project path="frameworks/av" name="tabasco_frameworks_av" remote="credenceid" revision="master" />
+  <project path="frameworks/base" name="tabasco_frameworks_base" remote="credenceframe" revision="master" />
+  <project path="frameworks/native" name="tabasco_frameworks_native" remote="credenceid" revision="master" />
+  <project path="hardware/broadcom/wlan" name="tabasco_hardware_broadcom_wlan" remote="credenceid" revision="master" />
+  <project path="hardware/imx" name="tabasco_hardware_imx" remote="credenceid" revision="master" />
+  <project path="hardware/invensense" name="tabasco_hardware_invensense" remote="credenceid" revision="master" />
+  <project path="hardware/libhardware" name="tabasco_hardware_libhardware" remote="credenceid" revision="master" />
+  <project path="hardware/libhardware_legacy" name="tabasco_hardware_libhardware_legacy" remote="credenceid" revision="master" />
+  <project path="hardware/qcom/bt" name="tabasco_hardware_qcom_bt" remote="credenceid" revision="master" />
+  <project path="packages/apps/Camera2" name="tabasco_packages_apps_Camera2" remote="credenceid" revision="master" />
+  <project path="packages/apps/fsl_imx_demo" name="tabasco_packages_apps_fsl_imx_demo" remote="credenceid" revision="master" />
+  <project path="system/bt" name="tabasco_system_bt" remote="credenceid" revision="master" />
+  <project path="system/core" name="tabasco_system_core" remote="credenceid" revision="master" />
+  <project path="system/extras" name="tabasco_system_extras" remote="credenceid" revision="master" groups="pdk" />
+  <project path="system/netd" name="tabasco_system_netd" remote="credenceid" revision="master" />
+  <project path="system/sepolicy" name="tabasco_system_sepolicy" remote="credenceid" revision="master" />
+  <project path="system/vold" name="tabasco_system_vold" remote="credenceid" revision="master" />
 
   <!-- projects added by Boundary -->
-  <project path="external/can-utils" name="tobasco_external_can-utils" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/devregs" name="tobasco_external_devregs" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/e2fsprogs" name="tobasco_external_e2fsprogs" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/exfat" name="tobasco_external_exfat" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/fuse" name="tobasco_external_fuse" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/i2c-tools" name="tabasco_external_i2c-tools" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/libtruezip" name="tobasco_external_libtruezip" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/ntfs-3g" name="tobasco_external_ntfs-3g" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/qcacld-2.0" name="tobasco_external_qcacld-2.0" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/qca-firmware" name="tobasco_external_qca-firmware" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/uicommon" name="tabasco_external_uicommon" remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/ti/wlan" name="tobasco_hardware_ti_wlan"  remote="credenceid" revision="cid_tobasco" />
-  <project path="hardware/ti/wpan" name="tobasco_hardware_ti_wpan" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/BoundaryDemo" name="tobasco_packages_apps_BoundaryDemo" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/CMFileManager" name="tobasco_packages_apps_CMFileManager" remote="credenceid" revision="cid_tobasco" />
+  <project path="external/can-utils" name="tabasco_external_can-utils" remote="credenceid" revision="master" />
+  <project path="external/devregs" name="tabasco_external_devregs" remote="credenceid" revision="master" />
+  <project path="external/e2fsprogs" name="tabasco_external_e2fsprogs" remote="credenceid" revision="master" />
+  <project path="external/exfat" name="tabasco_external_exfat" remote="credenceid" revision="master" />
+  <project path="external/fuse" name="tabasco_external_fuse" remote="credenceid" revision="master" />
+  <project path="external/i2c-tools" name="tabasco_external_i2c-tools" remote="credenceid" revision="master" />
+  <project path="external/libtruezip" name="tabasco_external_libtruezip" remote="credenceid" revision="master" />
+  <project path="external/ntfs-3g" name="tabasco_external_ntfs-3g" remote="credenceid" revision="master" />
+  <project path="external/qcacld-2.0" name="tabasco_external_qcacld-2.0" remote="credenceid" revision="master" />
+  <project path="external/qca-firmware" name="tabasco_external_qca-firmware" remote="credenceid" revision="master" />
+  <project path="external/uicommon" name="tabasco_external_uicommon" remote="credenceid" revision="master" />
+  <project path="hardware/ti/wlan" name="tabasco_hardware_ti_wlan"  remote="credenceid" revision="master" />
+  <project path="hardware/ti/wpan" name="tabasco_hardware_ti_wpan" remote="credenceid" revision="master" />
+  <project path="packages/apps/BoundaryDemo" name="tabasco_packages_apps_BoundaryDemo" remote="credenceid" revision="master" />
+  <project path="packages/apps/CMFileManager" name="tabasco_packages_apps_CMFileManager" remote="credenceid" revision="master" />
 
   <!-- projects added by Freescale -->
-  <project path="device/fsl-codec" name="tobasco_device_fsl-codec" remote="credenceid" revision="cid_tobasco" />
-  <project path="device/fsl-proprietary" name="tobasco_device_fsl-proprietary" remote="credenceid" revision="cid_tobasco" />
-  <project path="device/wfd-proprietary" name="tobasco_device_wfd-proprietary" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/fsl_aacp_dec" name="tobasco_external_fsl_aacp_dec" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/fsl_imx_omx" name="tobasco_external_fsl_imx_omx" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/linux-firmware-imx" name="tobasco_external_linux-firmware-imx" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/linux-lib" name="tobasco_external_linux-lib" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/mtd-utils" name="tobasco_external_mtd-utils" remote="credenceid" revision="cid_tobasco" />
+  <project path="device/fsl-codec" name="tabasco_device_fsl-codec" remote="credenceid" revision="master" />
+  <project path="device/fsl-proprietary" name="tabasco_device_fsl-proprietary" remote="credenceid" revision="master" />
+  <project path="device/wfd-proprietary" name="tabasco_device_wfd-proprietary" remote="credenceid" revision="master" />
+  <project path="external/fsl_aacp_dec" name="tabasco_external_fsl_aacp_dec" remote="credenceid" revision="master" />
+  <project path="external/fsl_imx_omx" name="tabasco_external_fsl_imx_omx" remote="credenceid" revision="master" />
+  <project path="external/linux-firmware-imx" name="tabasco_external_linux-firmware-imx" remote="credenceid" revision="master" />
+  <project path="external/linux-lib" name="tabasco_external_linux-lib" remote="credenceid" revision="master" />
+  <project path="external/mtd-utils" name="tabasco_external_mtd-utils" remote="credenceid" revision="master" />
 
   <!-- projects changed by Freescale -->
-  <project path="bionic" name="tobasco_bionic" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/dnsmasq" name="tobasco_external_dnsmasq" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/skia" name="tobasco_external_skia" remote="credenceid" revision="cid_tobasco" />
-  <project path="external/tinyalsa" name="tobasco_external_tinyalsa" remote="credenceid" revision="cid_tobasco" />
-  <project path="frameworks/ex" name="tobasco_frameworks_ex" remote="credenceid" revision="cid_tobasco" />
-  <project path="frameworks/opt/net/ethernet" name="tobasco_frameworks_opt_net_ethernet" remote="credenceid" revision="cid_tobasco" />
-  <project path="frameworks/support" name="tobasco_frameworks_support" remote="credenceid" revision="cid_tobasco" />
-  <project path="libcore" name="tobasco_libcore" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Browser2" name="tobasco_packages_apps_Browser2" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Contacts" name="tobasco_packages_apps_Contacts" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/DeskClock" name="tobasco_packages_apps_DeskClock" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Email" name="tobasco_packages_apps_Email" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Gallery" name="tobasco_packages_apps_Gallery" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Gallery2" name="tabasco_packages_apps_Gallery2" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Launcher2" name="tobasco_packages_apps_Launcher2" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/LegacyCamera" name="tobasco_packages_apps_LegacyCamera" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Music" name="tobasco_packages_apps_music" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/Settings" name="tobasco_packages_apps_settings" remote="credenceid" revision="cid_tobasco" />
-  <project path="packages/apps/SoundRecorder" name="tobasco_packages_apps_soundrecorder" remote="credenceid" revision="cid_tobasco" />
-  <project path="system/media" name="tobasco_system_media" remote="credenceid" revision="cid_tobasco" />
+  <project path="bionic" name="tabasco_bionic" remote="credenceid" revision="master" />
+  <project path="external/dnsmasq" name="tabasco_external_dnsmasq" remote="credenceid" revision="master" />
+  <project path="external/skia" name="tabasco_external_skia" remote="credenceid" revision="master" />
+  <project path="external/tinyalsa" name="tabasco_external_tinyalsa" remote="credenceid" revision="master" />
+  <project path="frameworks/ex" name="tabasco_frameworks_ex" remote="credenceid" revision="master" />
+  <project path="frameworks/opt/net/ethernet" name="tabasco_frameworks_opt_net_ethernet" remote="credenceid" revision="master" />
+  <project path="frameworks/support" name="tabasco_frameworks_support" remote="credenceid" revision="master" />
+  <project path="libcore" name="tabasco_libcore" remote="credenceid" revision="master" />
+  <project path="packages/apps/Browser2" name="tabasco_packages_apps_Browser2" remote="credenceid" revision="master" />
+  <project path="packages/apps/Contacts" name="tabasco_packages_apps_Contacts" remote="credenceid" revision="master" />
+  <project path="packages/apps/DeskClock" name="tabasco_packages_apps_DeskClock" remote="credenceid" revision="master" />
+  <project path="packages/apps/Email" name="tabasco_packages_apps_Email" remote="credenceid" revision="master" />
+  <project path="packages/apps/Gallery" name="tabasco_packages_apps_Gallery" remote="credenceid" revision="master" />
+  <project path="packages/apps/Gallery2" name="tabasco_packages_apps_Gallery2" remote="credenceid" revision="master" />
+  <project path="packages/apps/Launcher2" name="tabasco_packages_apps_Launcher2" remote="credenceid" revision="master" />
+  <project path="packages/apps/LegacyCamera" name="tabasco_packages_apps_LegacyCamera" remote="credenceid" revision="master" />
+  <project path="packages/apps/Music" name="tabasco_packages_apps_music" remote="credenceid" revision="master" />
+  <project path="packages/apps/Settings" name="tabasco_packages_apps_settings" remote="credenceid" revision="master" />
+  <project path="packages/apps/SoundRecorder" name="tabasco_packages_apps_soundrecorder" remote="credenceid" revision="master" />
+  <project path="system/media" name="tabasco_system_media" remote="credenceid" revision="master" />
 
   <!-- Unchanged AOSP projects -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
